@@ -1,0 +1,12 @@
+@keyframes backpos {
+  from {
+    background-position-x: -200px;
+  }
+  to {
+    background-position-x: calc(200px + 100%);
+  }
+}
+
+@mixin skeleton-animation {
+  animation: backpos 0.9s ease-in-out 0s infinite;
+}

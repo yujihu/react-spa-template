@@ -1,0 +1,88 @@
+@keyframes backpos {
+  from {
+    background-position-x: -200PX;
+  }
+  to {
+    background-position-x: calc(200PX + 100%);
+  }
+}
+.skeleton-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+}
+.skeleton-animation {
+  position: absolute;
+  z-index: auto;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 80%);
+  background-size: 30% 100%;
+  background-repeat: no-repeat;
+  animation: backpos 0.9s ease-in-out 0s infinite;
+}
+.skeleton-item {
+  background-color: #efefef;
+}
+.skeleton-item-1 {
+  height: 375PX;
+  width: 375PX;
+}
+.skeleton-container-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10PX 18PX;
+}
+
+.skeleton-container-2 {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  height: 40PX;
+}
+
+.skeleton-item-2 {
+  height: 18PX;
+}
+
+.skeleton-container-3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 50PX;
+  margin-left: 15PX;
+}
+
+.skeleton-container-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skeleton-item-3 {
+  height: 20PX;
+  width: 20PX;
+}
+
+.skeleton-item-4 {
+  margin-top: 2PX;
+  height: 9PX;
+  width: 20PX;
+}
+
+.skeleton-item-5 {
+  margin: 0 18PX;
+  height: 10PX;
+}
+
+.skeleton-item-6 {
+  margin: 3PX 18PX 0 18PX;
+  height: 10PX;
+  width: 200PX;
+}

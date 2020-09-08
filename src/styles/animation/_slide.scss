@@ -1,0 +1,23 @@
+@import '~@/styles/mixin/make-animation';
+@keyframes pmSlideIn {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes pmSlideOut {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+@include make-animation(pmSlide);

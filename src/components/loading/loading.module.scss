@@ -1,0 +1,17 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading {
+  width: 100px;
+  height: 100px;
+  background: url('~@/assets/image/jd_loading.gif') center / 100px 100px no-repeat;
+}
